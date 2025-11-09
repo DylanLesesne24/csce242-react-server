@@ -1,0 +1,98 @@
+[
+  {
+    "_id": 1,
+    "title": "Intel Gaming Build",
+    "price": "$1300",
+    "cpu": "Intel Core i5-12400F",
+    "gpu": "NVIDIA RTX 3060",
+    "ram": "16GB DDR4",
+    "storage": "512GB NVMe SSD",
+    "motherboard": "ATX B660",
+    "description": "Solid midrange gaming PC for 1080p/1440p gaming.",
+    "img_name": "images/intelpc.jpg"
+  },
+  {
+    "_id": 2,
+    "title": "Ryzen Performance Build",
+    "price": "$1450",
+    "cpu": "AMD Ryzen 5 5600X",
+    "gpu": "NVIDIA RTX 3070",
+    "ram": "16GB DDR4",
+    "storage": "1TB NVMe SSD",
+    "motherboard": "Micro-ATX B550",
+    "description": "Great balance of CPU and GPU for gaming and streaming.",
+    "img_name": "images/ryzenpc.jpg"
+  },
+  {
+    "_id": 3,
+    "title": "Budget Starter Build",
+    "price": "$600",
+    "cpu": "Intel Core i3 / Ryzen 3",
+    "gpu": "Integrated or GTX 1650",
+    "ram": "8GB DDR4",
+    "storage": "500GB SSD",
+    "motherboard": "Micro-ATX",
+    "description": "Entry-level PC for schoolwork, light gaming, and everyday use.",
+    "img_name": "images/budget-build.jpg"
+  },
+  {
+    "_id": 4,
+    "title": "Content Creator Workstation",
+    "price": "$2200",
+    "cpu": "AMD Ryzen 9 5900X",
+    "gpu": "NVIDIA RTX 3080",
+    "ram": "32GB DDR4",
+    "storage": "2TB NVMe + 4TB HDD",
+    "motherboard": "ATX X570",
+    "description": "Designed for video editing, rendering, and multitasking.",
+    "img_name": "images/content-creator.jpg"
+  },
+  {
+    "_id": 5,
+    "title": "Mini ITX Compact Build",
+    "price": "$1000",
+    "cpu": "Intel Core i5",
+    "gpu": "NVIDIA RTX 3060 (mini)",
+    "ram": "16GB DDR4",
+    "storage": "1TB NVMe SSD",
+    "motherboard": "Mini-ITX",
+    "description": "Small form-factor PC with good performance for tight spaces.",
+    "img_name": "images/mini-itx.jpg"
+  },
+  {
+    "_id": 6,
+    "title": "VR Ready Build",
+    "price": "$1700",
+    "cpu": "Intel Core i7",
+    "gpu": "NVIDIA RTX 3070",
+    "ram": "16GB DDR4",
+    "storage": "1TB NVMe SSD",
+    "motherboard": "ATX Z590",
+    "description": "Optimized for VR gaming and smooth framerates.",
+    "img_name": "images/vr-ready.jpg"
+  },
+  {
+    "_id": 7,
+    "title": "Streaming & Gaming Build",
+    "price": "$1600",
+    "cpu": "AMD Ryzen 7",
+    "gpu": "NVIDIA RTX 3060 Ti",
+    "ram": "32GB DDR4",
+    "storage": "1TB NVMe SSD",
+    "motherboard": "ATX B550",
+    "description": "Better multitasking for streaming while gaming.",
+    "img_name": "images/streaming-build.jpg"
+  },
+  {
+    "_id": 8,
+    "title": "High-End Enthusiast Build",
+    "price": "$3200",
+    "cpu": "Intel Core i9 / AMD Threadripper",
+    "gpu": "NVIDIA RTX 4090",
+    "ram": "64GB DDR5",
+    "storage": "2x 2TB NVMe",
+    "motherboard": "ATX X670 / TRX40",
+    "description": "Top-tier components for ultra settings, 4K and heavy workloads.",
+    "img_name": "images/high-end.jpg"
+  }
+]

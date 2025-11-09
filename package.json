@@ -1,0 +1,30 @@
+{
+  "name": "csce242-react-server",
+  "version": "1.0.0",
+  "description": "Simple Node/Express server for CSCE242 React project",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanLesesne24/csce242-react-server.git"
+  },
+  "keywords": [],
+  "author": "Dylan Lesesne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DylanLesesne24/csce242-react-server/issues"
+  },
+  "homepage": "https://github.com/DylanLesesne24/csce242-react-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
