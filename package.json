@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node mongodb/server.js",
+    "dev": "nodemon mongodb/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
