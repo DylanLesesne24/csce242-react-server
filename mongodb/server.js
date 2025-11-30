@@ -114,11 +114,46 @@ app.post("/api/userbuilds", async (req, res) => {
       details: error.details.map((d) => ({ message: d.message, path: d.path }))
     });
   }
-
   try {
     const newBuild = new Build(value);
     const saved = await newBuild.save();
     res.status(201).json({ success: true, build: saved });
+  } catch (err) {
+    res.status(500).json({ success: false, message: "Database error" });
+  }
+});
+
+app.put("/api/userbuilds/:id", async (req, res) => {
+  const { id } = req.params;
+  if (!mongoose.isValidObjectId(id)) {
+    return res.status(400).json({ success: false, message: "Invalid ID" });
+  }
+  const { error, value } = buildSchemaJoi.validate(req.body, { abortEarly: false });
+  if (error) {
+    return res.status(400).json({
+      success: false,
+      message: "Validation failed",
+      details: error.details.map((d) => ({ message: d.message, path: d.path }))
+    });
+  }
+  try {
+    const updated = await Build.findByIdAndUpdate(id, value, { new: true }).lean();
+    if (!updated) return res.status(404).json({ success: false, message: "Build not found" });
+    res.status(200).json({ success: true, build: updated });
+  } catch (err) {
+    res.status(500).json({ success: false, message: "Database error" });
+  }
+});
+
+app.delete("/api/userbuilds/:id", async (req, res) => {
+  const { id } = req.params;
+  if (!mongoose.isValidObjectId(id)) {
+    return res.status(400).json({ success: false, message: "Invalid ID" });
+  }
+  try {
+    const removed = await Build.findByIdAndDelete(id).lean();
+    if (!removed) return res.status(404).json({ success: false, message: "Build not found" });
+    res.status(200).json({ success: true, id: removed._id });
   } catch (err) {
     res.status(500).json({ success: false, message: "Database error" });
   }
