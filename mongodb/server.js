@@ -28,10 +28,10 @@ app.get("/api", (req, res) => {
     message: "Builds API",
     endpoints: [
       { method: "GET", path: "/api", description: "API overview" },
-      { method: "GET", path: "/api/builds", description: "List all builds (static)" },
+      { method: "GET", path: "/api/builds", description: "List all builds" },
       { method: "GET", path: "/api/builds/:id", description: "Get a single static build by id or title" },
-      { method: "GET", path: "/api/userbuilds", description: "List user-created builds (MongoDB)" },
-      { method: "POST", path: "/api/userbuilds", description: "Create a new user build (MongoDB)" }
+      { method: "GET", path: "/api/userbuilds", description: "List user-created builds" },
+      { method: "POST", path: "/api/userbuilds", description: "Create a new user build" }
     ]
   });
 });
